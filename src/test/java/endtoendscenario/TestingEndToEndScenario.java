@@ -13,7 +13,7 @@ public class TestingEndToEndScenario extends BaseSteps {
         signUpPage.FillUsernameBox();
         signUpPage.FillPasswordBox();
         signUpPage.clickOnRegisterButton();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         String actualresult3 = signUpPage.SignUpSuccessful();
         String expectedresult3 = "Sign up successful.";
         Assert.assertTrue(actualresult3.contains(expectedresult3));
